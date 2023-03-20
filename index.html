@@ -398,40 +398,63 @@
           </p>
         </div>
         <div class="footer-socials">
-          <p class="footer-social-text">Social media</p>
-          <ul class="footer-social-list list">
-            <li class="footer-social-item">
-              <a href="#" class="footer-social-link">
-                <svg class="footer-social-icon" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a href="#" class="footer-social-link">
-                <svg class="footer-social-icon" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a href="#" class="footer-social-link">
-                <svg class="footer-social-icon" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a href="#" class="footer-social-link">
-                <svg class="footer-social-icon" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="footer-links">
+            <p class="footer-social-text">Social media</p>
+            <ul class="footer-social-list list">
+              <li class="footer-social-item">
+                <a href="#" class="footer-social-link">
+                  <svg class="footer-social-icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="#" class="footer-social-link">
+                  <svg class="footer-social-icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="#" class="footer-social-link">
+                  <svg class="footer-social-icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="#" class="footer-social-link">
+                  <svg class="footer-social-icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form class="footer-form">
+            <label class="footer-form-label">
+              <span>Subscribe</span>
+              <div class="footer-form-row">
+                <input
+                  class="footer-form-input"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+                <button type="submit" class="footer-form-btn">
+                  Subscribe
+                  <svg class="send-icon" width="24px" height="24">
+                    <use href="./images/symbol-defs.svg#send"></use>
+                  </svg>
+                </button>
+              </div>
+            </label>
+          </form>
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-close">
@@ -439,6 +462,77 @@
             <use href="./images/symbol-defs.svg#close"></use>
           </svg>
         </button>
+        <h3 class="modal-title">
+          Leave your contacts and we will call you back
+        </h3>
+        <form class="modal-form form">
+          <div class="form-group">
+            <label class="form-label">
+              <span>Name</span>
+              <div class="form-control">
+                <input
+                  type="text"
+                  class="form-input"
+                  name="fullname"
+                  required
+                />
+                <svg class="form-icon" width="18px" height="18px">
+                  <use href="./images/symbol-defs.svg#person"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+              <span>Phone</span>
+              <div class="form-control">
+                <input type="tel" class="form-input" name="phone" required />
+                <svg class="form-icon" width="18px" height="18px">
+                  <use href="./images/symbol-defs.svg#phone"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+              <span>Email</span>
+              <div class="form-control">
+                <input type="email" class="form-input" name="email" />
+                <svg class="form-icon" width="18px" height="18px">
+                  <use href="./images/symbol-defs.svg#email"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+
+          <label class="form-label">
+            <span>Comment</span>
+            <textarea class="form-comment" placeholder="Text input"></textarea>
+          </label>
+
+          <input
+            type="checkbox"
+            class="form-checkbox visually-hidden"
+            id="policy"
+            name="policy"
+          />
+
+          <label for="policy" class="form-label-checkbox">
+            <span>
+              <svg class="form-checkbox-icon" width="10px" height="8px">
+                <use href="./images/symbol-defs.svg#check"></use>
+              </svg>
+            </span>
+            <p>
+              I accept the terms and conditions of the
+              <a href="#" class="policy-link">Privacy Policy</a>
+            </p>
+          </label>
+
+          <button type="submit" class="form-btn btn">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
