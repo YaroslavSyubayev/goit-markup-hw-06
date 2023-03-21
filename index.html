@@ -432,7 +432,7 @@
             </ul>
           </div>
           <form class="footer-form">
-            <label class="footer-form-label">
+            <div class="footer-form-label">
               <span>Subscribe</span>
               <div class="footer-form-row">
                 <input
@@ -448,7 +448,7 @@
                   </svg>
                 </button>
               </div>
-            </label>
+            </div>
           </form>
         </div>
       </div>
@@ -462,50 +462,37 @@
             <use href="./images/symbol-defs.svg#close"></use>
           </svg>
         </button>
-        <h3 class="modal-title">
-          Leave your contacts and we will call you back
-        </h3>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form form">
-          <div class="form-group">
-            <label class="form-label">
-              <span>Name</span>
-              <div class="form-control">
-                <input
-                  type="text"
-                  class="form-input"
-                  name="fullname"
-                  required
-                />
-                <svg class="form-icon" width="18px" height="18px">
-                  <use href="./images/symbol-defs.svg#person"></use>
-                </svg>
-              </div>
-            </label>
-          </div>
+          <label class="form-label form-group">
+            <span>Name</span>
+            <span class="form-control">
+              <input type="text" class="form-input" name="fullname" required />
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/symbol-defs.svg#person"></use>
+              </svg>
+            </span>
+          </label>
 
-          <div class="form-group">
-            <label class="form-label">
-              <span>Phone</span>
-              <div class="form-control">
-                <input type="tel" class="form-input" name="phone" required />
-                <svg class="form-icon" width="18px" height="18px">
-                  <use href="./images/symbol-defs.svg#phone"></use>
-                </svg>
-              </div>
-            </label>
-          </div>
+          <label class="form-label form-group">
+            <span>Phone</span>
+            <span class="form-control">
+              <input type="tel" class="form-input" name="phone" required />
+              <svg class="form-icon" width="18px" height="24px">
+                <use href="./images/symbol-defs.svg#phone"></use>
+              </svg>
+            </span>
+          </label>
 
-          <div class="form-group">
-            <label class="form-label">
-              <span>Email</span>
-              <div class="form-control">
-                <input type="email" class="form-input" name="email" />
-                <svg class="form-icon" width="18px" height="18px">
-                  <use href="./images/symbol-defs.svg#email"></use>
-                </svg>
-              </div>
-            </label>
-          </div>
+          <label class="form-label form-group">
+            <span>Email</span>
+            <span class="form-control">
+              <input type="email" class="form-input" name="email" />
+              <svg class="form-icon" width="18px" height="24px">
+                <use href="./images/symbol-defs.svg#email"></use>
+              </svg>
+            </span>
+          </label>
 
           <label class="form-label">
             <span>Comment</span>
@@ -520,15 +507,15 @@
           />
 
           <label for="policy" class="form-label-checkbox">
-            <span>
+            <span class="form-label-check-span">
               <svg class="form-checkbox-icon" width="10px" height="8px">
                 <use href="./images/symbol-defs.svg#check"></use>
               </svg>
             </span>
-            <p>
+            <span>
               I accept the terms and conditions of the
               <a href="#" class="policy-link">Privacy Policy</a>
-            </p>
+            </span>
           </label>
 
           <button type="submit" class="form-btn btn">Send</button>

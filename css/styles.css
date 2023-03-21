@@ -692,6 +692,7 @@ body {
   top: 50%;
   left: 50%;
   background-color: var(--dairy);
+  padding: 72px 24px 24px;
   position: absolute;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -752,19 +753,14 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark);
-  padding-top: 72px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 16px;
-}
-
-.modal-form {
-  margin: 16px 32px;
 }
 
 .form-input {
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid var(--dark);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   height: 40px;
   border-radius: 4px;
   background-color: var(--dairy);
@@ -794,11 +790,10 @@ body {
 .form-comment {
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid var(--dark);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   height: 120px;
   border-radius: 4px;
-  padding: 11px 4px;
-  margin-bottom: 8px;
+  padding: 8px 16px;
   outline: none;
   resize: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -828,7 +823,7 @@ body {
   text-align: center;
   border-radius: 4px;
   display: block;
-  margin: 24px auto;
+  margin: 24px auto 0px auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition-property: background-color;
@@ -852,6 +847,7 @@ body {
 
 .form-group:not(:last-child) {
   margin-bottom: 8px;
+  display: block;
 }
 
 .form-control {
@@ -873,7 +869,7 @@ body {
   color: var(--subtle-text);
   display: flex;
   align-items: center;
-  padding-top: 16px;
+  margin-top: 16px;
 }
 
 .form-checkbox:checked + .form-label-checkbox::before {
@@ -881,7 +877,7 @@ body {
   border-color: var(--pressed-state);
 }
 
-.form-label-checkbox span {
+.form-label-checkbox .form-label-check-span {
   width: 16px;
   height: 16px;
   border: 1px solid var(--dark);
@@ -895,7 +891,7 @@ body {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-checkbox:checked + .form-label-checkbox span {
+.form-checkbox:checked + .form-label-checkbox .form-label-check-span {
   fill: var(--light);
   background-color: var(--pressed-state);
 }
